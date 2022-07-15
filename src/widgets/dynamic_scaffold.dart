@@ -1,7 +1,8 @@
+import 'dynamic_widget_structure.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import './dynamic_mobile_widgets.dart';
 
 /// ## Both Android and IOS
 /// ---
@@ -133,7 +134,7 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// [ScaffoldState.openDrawer] to open the drawer and [Navigator.pop] to close
   /// it.
   ///
-  /// ** See code in examples/api/lib/material/scaffold/scaffold.drawer.0.dart **
+  /// ** See code in examples/api/src/material/scaffold/scaffold.drawer.0.dart **
   /// {@end-tool}
   final Widget? drawer;
 
@@ -162,7 +163,7 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// [ScaffoldState.openEndDrawer] to open the drawer and [Navigator.pop] to
   /// close it.
   ///
-  /// ** See code in examples/api/lib/material/scaffold/scaffold.end_drawer.0.dart **
+  /// ** See code in examples/api/src/material/scaffold/scaffold.end_drawer.0.dart **
   /// {@end-tool}
   final Widget? endDrawer;
 

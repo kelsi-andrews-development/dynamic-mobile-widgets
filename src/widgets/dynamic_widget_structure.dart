@@ -1,15 +1,7 @@
-library platform_builder;
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-// /// A Calculator.
-// class Calculator {
-//   /// Returns [value] plus 1.
-//   int addOne(int value) => value + 1;
-// }
 
 /// Base class for implementing [PlatformBuilder] as a [StatefulWidget].
 ///

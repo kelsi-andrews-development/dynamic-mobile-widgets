@@ -1,6 +1,7 @@
+import 'dynamic_widget_structure.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import './dynamic_mobile_widgets.dart';
 
 class DynamicCircularProgressIndicator extends DynamicStatefulWidget {
   final double? value;

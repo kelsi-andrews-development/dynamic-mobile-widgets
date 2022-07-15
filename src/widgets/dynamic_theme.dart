@@ -1,5 +1,5 @@
 // TODO: Implement PlatformTheme
-// import './dynamic_mobile_widgets.dart';
+// import './widgets.dart';
 /*
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

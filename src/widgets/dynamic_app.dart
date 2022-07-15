@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import './dynamic_mobile_widgets.dart';
+import 'dynamic_widget_structure.dart';
 
 // ## Both Android and IOS
 // ---
