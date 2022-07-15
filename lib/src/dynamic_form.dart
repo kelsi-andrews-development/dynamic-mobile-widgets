@@ -27,7 +27,7 @@ class DynamicForm extends DynamicStatefulWidget {
   ///
   /// This is the root of the widget hierarchy that contains this form.
   ///
-  /// {@macro flutter.widgets.ProxyWidget.child}
+  /// {@macro flutter.src.ProxyWidget.child}
   /// ---
   /// **Cupertino's CupertinoFormSection's documentation:**<br>
   /// The list of rows in the section.
@@ -35,7 +35,7 @@ class DynamicForm extends DynamicStatefulWidget {
   /// This takes a list, as opposed to a more efficient builder function that
   /// lazy builds, because forms are intended to be short in row count. It is
   /// recommended that only [CupertinoFormRow] and [CupertinoTextFormFieldRow]
-  /// widgets be included in the [children] list in order to retain the iOS look.
+  /// src be included in the [children] list in order to retain the iOS look.
   final List<DynamicFormField> formFieldList;
 
   /// Enables the form to veto attempts by the user to dismiss the [ModalRoute]
@@ -59,7 +59,7 @@ class DynamicForm extends DynamicStatefulWidget {
   /// Used to enable/disable form fields auto validation and update their error
   /// text.
   ///
-  /// {@macro flutter.widgets.FormField.autovalidateMode}
+  /// {@macro flutter.src.FormField.autovalidateMode}
   final AutovalidateMode autoValidateMode;
 
   // ios

@@ -10,6 +10,10 @@
     
 ----
 
+#### 0.0.15+2
+
+* Added `lib` directory and changed `widgets` directory to `src`
+
 #### 0.0.15+1
 
 * Fixed small bugs
@@ -24,7 +28,7 @@
   * Previous structure:<br>
   &emsp;`dynamic_mobile_widgets > lib > [all files]`
   * Project is now structured:<br>
-  &emsp;`dynamic_mobile_widgets > src > widgets > [all files]`<br>
+  &emsp;`dynamic_mobile_widgets > src > src > [all files]`<br>
   &emsp;`dynamic_mobile_widgets > src > dynamic_mobile_widgets.dart` (Export handler)
 
 ----
@@ -33,7 +37,7 @@
 
 * First release
 * Most likely will have bugs
-* Starting supported widgets (Android Support/IOS Support):
+* Starting supported src (Android Support/IOS Support):
   * DynamicApp (MaterialApp/CupertinoApp)
   * DynamicAppBar (AppBar/CupertinoNavigationBar)
   * DynamicButton (ElevatedButton/CupertinoButton)

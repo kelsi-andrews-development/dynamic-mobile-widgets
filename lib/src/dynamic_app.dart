@@ -16,7 +16,7 @@ import 'dynamic_widget_structure.dart';
 /// * [CupertinoApp], IOS Documentation located in file [package:flutter/cupertino.dart]
 class DynamicApp extends DynamicStatefulWidget {
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.navigatorKey}
+  /// {@macro flutter.src.widgetsApp.navigatorKey}
   final GlobalKey<NavigatorState>? navigatorKey;
 
   /// ## Both Android and IOS
@@ -29,7 +29,7 @@ class DynamicApp extends DynamicStatefulWidget {
   final GlobalKey<ScaffoldMessengerState>? scaffoldMessengerKey;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.home}
+  /// {@macro flutter.src.widgetsApp.home}
   final Widget? home;
 
   /// ## Both Android and IOS
@@ -39,76 +39,76 @@ class DynamicApp extends DynamicStatefulWidget {
   ///
   /// When a named route is pushed with [Navigator.pushNamed], the route name is
   /// looked up in this map. If the name is present, the associated
-  /// [widgets.WidgetBuilder] is used to construct a [MaterialPageRoute] that
+  /// [src.WidgetBuilder] is used to construct a [MaterialPageRoute] that
   /// performs an appropriate transition, including [Hero] animations, to the
   /// new route.
   ///
-  /// {@macro flutter.widgets.widgetsApp.routes}
+  /// {@macro flutter.src.widgetsApp.routes}
   /// ---
   /// **Cupertino's CupertinoApp's documentation:**<br>
   /// The application's top-level routing table.
   ///
   /// When a named route is pushed with [Navigator.pushNamed], the route name is
   /// looked up in this map. If the name is present, the associated
-  /// [widgets.WidgetBuilder] is used to construct a [MaterialPageRoute] that
+  /// [src.WidgetBuilder] is used to construct a [MaterialPageRoute] that
   /// performs an appropriate transition, including [Hero] animations, to the
   /// new route.
   ///
-  /// {@macro flutter.widgets.widgetsApp.routes}
+  /// {@macro flutter.src.widgetsApp.routes}
   final Map<String, WidgetBuilder>? routes;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.initialRoute}
+  /// {@macro flutter.src.widgetsApp.initialRoute}
   final String? initialRoute;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.onGenerateRoute}
+  /// {@macro flutter.src.widgetsApp.onGenerateRoute}
   final RouteFactory? onGenerateRoute;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.onGenerateInitialRoutes}
+  /// {@macro flutter.src.widgetsApp.onGenerateInitialRoutes}
   final InitialRouteListFactory? onGenerateInitialRoutes;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.onUnknownRoute}
+  /// {@macro flutter.src.widgetsApp.onUnknownRoute}
   final RouteFactory? onUnknownRoute;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.navigatorObservers}
+  /// {@macro flutter.src.widgetsApp.navigatorObservers}
   final List<NavigatorObserver>? navigatorObservers;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.routeInformationProvider}
+  /// {@macro flutter.src.widgetsApp.routeInformationProvider}
   final RouteInformationProvider? routeInformationProvider;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.routeInformationParser}
+  /// {@macro flutter.src.widgetsApp.routeInformationParser}
   final RouteInformationParser<Object>? routeInformationParser;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.routerDelegate}
+  /// {@macro flutter.src.widgetsApp.routerDelegate}
   final RouterDelegate<Object>? routerDelegate;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.backButtonDispatcher}
+  /// {@macro flutter.src.widgetsApp.backButtonDispatcher}
   final BackButtonDispatcher? backButtonDispatcher;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.builder}
+  /// {@macro flutter.src.widgetsApp.builder}
   ///
-  /// Material specific features such as [showDialog] and [showMenu], and widgets
+  /// Material specific features such as [showDialog] and [showMenu], and src
   /// such as [Tooltip], [PopupMenuButton], also require a [Navigator] to properly
   /// function.
   final TransitionBuilder? builder;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.title}
+  /// {@macro flutter.src.widgetsApp.title}
   ///
   /// This value is passed unmodified to [WidgetsApp.title].
   final String title;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.onGenerateTitle}
+  /// {@macro flutter.src.widgetsApp.onGenerateTitle}
   ///
   /// This value is passed unmodified to [WidgetsApp.onGenerateTitle].
   final GenerateAppTitle? onGenerateTitle;
@@ -118,7 +118,7 @@ class DynamicApp extends DynamicStatefulWidget {
   /// You do not have to define both, although defining [materialThemeData] over [cupertinoThemeData] is preferred.
   /// ---
   /// Default visual properties, like colors fonts and shapes, for this app's
-  /// material widgets.
+  /// material src.
   ///
   /// A second [darkTheme] [ThemeData] value, which is used to provide a dark
   /// version of the user interface can also be specified. [themeMode] will
@@ -228,15 +228,15 @@ class DynamicApp extends DynamicStatefulWidget {
   final ThemeMode? themeMode;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.color}
+  /// {@macro flutter.src.widgetsApp.color}
   final Color? color;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.locale}
+  /// {@macro flutter.src.widgetsApp.locale}
   final Locale? locale;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.localizationsDelegates}
+  /// {@macro flutter.src.widgetsApp.localizationsDelegates}
   ///
   /// Internationalized apps that require translations for one of the locales
   /// listed in [GlobalMaterialLocalizations] should specify this parameter
@@ -330,19 +330,19 @@ class DynamicApp extends DynamicStatefulWidget {
   final Iterable<LocalizationsDelegate<dynamic>>? localizationsDelegates;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.localeListResolutionCallback}
+  /// {@macro flutter.src.widgetsApp.localeListResolutionCallback}
   ///
   /// This callback is passed along to the [WidgetsApp] built by this widget.
   final LocaleListResolutionCallback? localeListResolutionCallback;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.LocaleResolutionCallback}
+  /// {@macro flutter.src.LocaleResolutionCallback}
   ///
   /// This callback is passed along to the [WidgetsApp] built by this widget.
   final LocaleResolutionCallback? localeResolutionCallback;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.supportedLocales}
+  /// {@macro flutter.src.widgetsApp.supportedLocales}
   ///
   /// It is passed along unmodified to the [WidgetsApp] built by this widget.
   ///
@@ -378,11 +378,11 @@ class DynamicApp extends DynamicStatefulWidget {
   final bool showSemanticsDebugger;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.debugShowCheckedModeBanner}
+  /// {@macro flutter.src.widgetsApp.debugShowCheckedModeBanner}
   final bool debugShowCheckedModeBanner;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.shortcuts}
+  /// {@macro flutter.src.widgetsApp.shortcuts}
   /// {@tool snippet}
   /// This example shows how to add a single shortcut for
   /// [LogicalKeyboardKey.select] to the default shortcuts without needing to
@@ -407,10 +407,10 @@ class DynamicApp extends DynamicStatefulWidget {
   /// }
   /// ```
   /// {@end-tool}
-  /// {@macro flutter.widgets.widgetsApp.shortcuts.seeAlso}
+  /// {@macro flutter.src.widgetsApp.shortcuts.seeAlso}
   final Map<ShortcutActivator, Intent>? shortcuts;
 
-  /// {@macro flutter.widgets.widgetsApp.actions}
+  /// {@macro flutter.src.widgetsApp.actions}
   /// {@tool snippet}
   /// This example shows how to add a single action handling an
   /// [ActivateAction] to the default actions without needing to
@@ -440,18 +440,18 @@ class DynamicApp extends DynamicStatefulWidget {
   /// }
   /// ```
   /// {@end-tool}
-  /// {@macro flutter.widgets.widgetsApp.actions.seeAlso}
+  /// {@macro flutter.src.widgetsApp.actions.seeAlso}
   final Map<Type, Action<Intent>>? actions;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.restorationScopeId}
+  /// {@macro flutter.src.widgetsApp.restorationScopeId}
   final String? restorationScopeId;
 
   /// ## Both Android and IOS
   /// {@template flutter.material.materialApp.scrollBehavior}
   /// The default [ScrollBehavior] for the application.
   ///
-  /// [ScrollBehavior]s describe how [Scrollable] widgets behave. Providing
+  /// [ScrollBehavior]s describe how [Scrollable] src behave. Providing
   /// a [ScrollBehavior] can set the default [ScrollPhysics] across
   /// an application, and manage [Scrollable] decorations like [Scrollbar]s and
   /// [GlowingOverscrollIndicator]s.
@@ -461,7 +461,7 @@ class DynamicApp extends DynamicStatefulWidget {
   ///
   /// See also:
   ///
-  ///  * [ScrollConfiguration], which controls how [Scrollable] widgets behave
+  ///  * [ScrollConfiguration], which controls how [Scrollable] src behave
   ///    in a subtree.
   final ScrollBehavior? scrollBehavior;
 
@@ -477,7 +477,7 @@ class DynamicApp extends DynamicStatefulWidget {
   final bool debugShowMaterialGrid;
 
   /// ## Both Android and IOS
-  /// {@macro flutter.widgets.widgetsApp.useInheritedMediaQuery}
+  /// {@macro flutter.src.widgetsApp.useInheritedMediaQuery}
   final bool useInheritedMediaQuery;
 
   const DynamicApp({

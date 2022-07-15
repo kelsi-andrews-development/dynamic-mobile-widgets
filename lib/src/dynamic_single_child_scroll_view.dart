@@ -85,10 +85,10 @@ class DynamicSingleChildScrollView extends DynamicStatefulWidget {
   /// **SingleChildScrollView's documentation:**<br>
   /// The widget that scrolls.
   ///
-  /// {@macro flutter.widgets.ProxyWidget.child}
+  /// {@macro flutter.src.ProxyWidget.child}
   final Widget? child;
 
-  /// {@macro flutter.widgets.scrollable.dragStartBehavior}
+  /// {@macro flutter.src.scrollable.dragStartBehavior}
   final DragStartBehavior dragStartBehavior;
 
   /// {@macro flutter.material.Material.clipBehavior}
@@ -96,15 +96,15 @@ class DynamicSingleChildScrollView extends DynamicStatefulWidget {
   /// Defaults to [Clip.hardEdge].
   final Clip clipBehavior;
 
-  /// {@macro flutter.widgets.scrollable.restorationId}
+  /// {@macro flutter.src.scrollable.restorationId}
   final String? restorationId;
 
-  /// {@macro flutter.widgets.scroll_view.keyboardDismissBehavior}
+  /// {@macro flutter.src.scroll_view.keyboardDismissBehavior}
   final ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
 
   // android
 
-  /// {@macro flutter.widgets.Scrollbar.isAlwaysShown}
+  /// {@macro flutter.src.Scrollbar.isAlwaysShown}
   final bool? isAlwaysShown;
 
   /// Controls the track visibility.
@@ -153,13 +153,13 @@ class DynamicSingleChildScrollView extends DynamicStatefulWidget {
   /// default [Radius.circular] of 8.0 pixels.
   final Radius? radius;
 
-  /// {@macro flutter.widgets.Scrollbar.interactive}
+  /// {@macro flutter.src.Scrollbar.interactive}
   final bool? interactive;
 
   /// ## Both Android and IOS
   /// ---
   /// **Material ScrollBar's documentation:**<br>
-  /// {@macro flutter.widgets.Scrollbar.notificationPredicate}
+  /// {@macro flutter.src.Scrollbar.notificationPredicate}
   /// ---
   /// **Cupertino's CupertinoScrollBar's documentation:**<br>
   /// No documentation provided.
@@ -169,7 +169,7 @@ class DynamicSingleChildScrollView extends DynamicStatefulWidget {
   /// ## Both Android and IOS
   /// ---
   /// **Material ScrollBar's documentation:**<br>
-  /// {@macro flutter.widgets.Scrollbar.scrollbarOrientation}
+  /// {@macro flutter.src.Scrollbar.scrollbarOrientation}
   /// ---
   /// **Cupertino's CupertinoScrollBar's documentation:**<br>
   /// No documentation provided.

@@ -130,7 +130,7 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
   /// {@endtemplate}
   ///
   /// The [title]'s width is constrained to fit within the remaining space
-  /// between the toolbar's [leading] and [actions] widgets. Its height is
+  /// between the toolbar's [leading] and [actions] src. Its height is
   /// _not_ constrained. The [title] is vertically centered and clipped to fit
   /// within the toolbar, whose height is [toolbarHeight]. Typically this
   /// isn't noticeable because a simple [Text] [title] will fit within the
@@ -172,7 +172,7 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
   /// {@template flutter.material.appbar.actions}
   /// A list of Widgets to display in a row after the [title] widget.
   ///
-  /// Typically these widgets are [IconButton]s representing common operations.
+  /// Typically these src are [IconButton]s representing common operations.
   /// For less common operations, consider using a [PopupMenuButton] as the
   /// last action.
   ///
@@ -229,7 +229,7 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
   /// {@template flutter.material.appbar.bottom}
   /// This widget appears across the bottom of the app bar.
   ///
-  /// Typically a [TabBar]. Only widgets that implement [PreferredSizeWidget] can
+  /// Typically a [TabBar]. Only src that implement [PreferredSizeWidget] can
   /// be used at the bottom of an app bar.
   /// {@endtemplate}
   ///
@@ -338,7 +338,7 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
   /// theme's [brightness] is [Brightness.dark].
   ///
   /// This color is used to configure [DefaultTextStyle] that contains
-  /// the toolbar's children, and the default [IconTheme] widgets that
+  /// the toolbar's children, and the default [IconTheme] src that
   /// are created if [iconTheme] and [actionsIconTheme] are null.
   /// {@endtemplate}
   ///
@@ -473,7 +473,7 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
 
   /// {@template flutter.material.appbar.toolbarTextStyle}
   /// The default text style for the AppBar's [leading], and
-  /// [actions] widgets, but not its [title].
+  /// [actions] src, but not its [title].
   ///
   /// If this property is null, then [AppBarTheme.toolbarTextStyle] of
   /// [ThemeData.appBarTheme] is used. If that is also null, the default
@@ -485,7 +485,7 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
   ///
   ///  * [titleTextStyle], which overrides the default text style for the [title].
   ///  * [DefaultTextStyle], which overrides the default text style for all of the
-  ///    the widgets in a subtree.
+  ///    the src in a subtree.
   final TextStyle? toolbarTextStyle;
 
   /// {@template flutter.material.appbar.titleTextStyle}
@@ -500,10 +500,10 @@ class DynamicAppBar extends DynamicStatefulWidget implements PreferredSizeWidget
   /// See also:
   ///
   ///  * [toolbarTextStyle], which is the default text style for the AppBar's
-  ///    [title], [leading], and [actions] widgets, also known as the
+  ///    [title], [leading], and [actions] src, also known as the
   ///    AppBar's "toolbar".
   ///  * [DefaultTextStyle], which overrides the default text style for all of the
-  ///    the widgets in a subtree.
+  ///    the src in a subtree.
   final TextStyle? titleTextStyle;
 
   /// {@template flutter.material.appbar.systemOverlayStyle}

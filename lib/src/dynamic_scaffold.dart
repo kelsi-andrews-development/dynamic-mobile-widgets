@@ -33,7 +33,7 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// having that be the body. To expand this widget instead, consider
   /// putting it in a [SizedBox.expand].
   ///
-  /// If you have a column of widgets that should normally fit on the screen,
+  /// If you have a column of src that should normally fit on the screen,
   /// but may overflow and would in such cases need to scroll, consider using a
   /// [ListView] as the body of the scaffold. This is also a good choice for
   /// the case where your body is a scrollable list.
@@ -106,10 +106,10 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// **Material Scaffold's documentation:**<br>
   /// A set of buttons that are displayed at the bottom of the scaffold.
   ///
-  /// Typically this is a list of [TextButton] widgets. These buttons are
+  /// Typically this is a list of [TextButton] src. These buttons are
   /// persistently visible, even if the [body] of the scaffold scrolls.
   ///
-  /// These widgets will be wrapped in an [OverflowBar].
+  /// These src will be wrapped in an [OverflowBar].
   ///
   /// The [persistentFooterButtons] are rendered above the
   /// [bottomNavigationBar] but below the [body].
@@ -134,7 +134,7 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// [ScaffoldState.openDrawer] to open the drawer and [Navigator.pop] to close
   /// it.
   ///
-  /// ** See code in examples/api/src/material/scaffold/scaffold.drawer.0.dart **
+  /// ** See code in examples/api/lib/material/scaffold/scaffold.drawer.0.dart **
   /// {@end-tool}
   final Widget? drawer;
 
@@ -163,7 +163,7 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// [ScaffoldState.openEndDrawer] to open the drawer and [Navigator.pop] to
   /// close it.
   ///
-  /// ** See code in examples/api/src/material/scaffold/scaffold.end_drawer.0.dart **
+  /// ** See code in examples/api/lib/material/scaffold/scaffold.end_drawer.0.dart **
   /// {@end-tool}
   final Widget? endDrawer;
 
@@ -223,13 +223,13 @@ class DynamicScaffold extends DynamicStatefulWidget {
   /// ## Both Android and IOS
   /// ---
   /// **Material Scaffold's documentation:**<br>
-  /// If true the [body] and the scaffold's floating widgets should size
+  /// If true the [body] and the scaffold's floating src should size
   /// themselves to avoid the onscreen keyboard whose height is defined by the
   /// ambient [MediaQuery]'s [MediaQueryData.viewInsets] `bottom` property.
   ///
   /// For example, if there is an onscreen keyboard displayed above the
   /// scaffold, the body can be resized to avoid overlapping the keyboard, which
-  /// prevents widgets inside the body from being obscured by the keyboard.
+  /// prevents src inside the body from being obscured by the keyboard.
   ///
   /// Defaults to true.
   ///
@@ -239,7 +239,7 @@ class DynamicScaffold extends DynamicStatefulWidget {
   ///
   /// For example, if there is an onscreen keyboard displayed above the
   /// scaffold, the body can be resized to avoid overlapping the keyboard, which
-  /// prevents widgets inside the body from being obscured by the keyboard.
+  /// prevents src inside the body from being obscured by the keyboard.
   ///
   /// Defaults to true and cannot be null.
   final bool resizeToAvoidBottomInset;

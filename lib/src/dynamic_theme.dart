@@ -1,5 +1,5 @@
 // TODO: Implement PlatformTheme
-// import './widgets.dart';
+// import './src.dart';
 /*
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +35,7 @@ class PlatformTheme {
   ///
   /// If true and [brightness] is [Brightness.dark], a
   /// semi-transparent version of [ColorScheme.onSurface] will be
-  /// applied on top of [Material] widgets that have a [ColorScheme.surface]
+  /// applied on top of [Material] src that have a [ColorScheme.surface]
   /// color. The level of transparency is based on [Material.elevation] as
   /// per the Material Dark theme specification.
   ///
@@ -59,7 +59,7 @@ class PlatformTheme {
   /// Components of the [CupertinoThemeData] to override from the Material
   /// [ThemeData] adaptation.
   ///
-  /// By default, [cupertinoOverrideTheme] is null and Cupertino widgets
+  /// By default, [cupertinoOverrideTheme] is null and Cupertino src
   /// descendant to the Material [Theme] will adhere to a [CupertinoTheme]
   /// derived from the Material [ThemeData]. e.g. [ThemeData]'s [ColorScheme]
   /// will also inform the [CupertinoThemeData]'s `primaryColor` etc.
@@ -74,7 +74,7 @@ class PlatformTheme {
   /// See [InputDecoration.applyDefaults].
   final InputDecorationTheme? inputDecorationTheme;
 
-  /// Configures the hit test size of certain Material widgets.
+  /// Configures the hit test size of certain Material src.
   ///
   /// Defaults to a [platform]-appropriate size: [MaterialTapTargetSize.padded]
   /// on mobile platforms, [MaterialTapTargetSize.shrinkWrap] on desktop
@@ -88,7 +88,7 @@ class PlatformTheme {
   /// whose platform is null is used.
   final PageTransitionsTheme? pageTransitionsTheme;
 
-  /// The platform the material widgets should adapt to target.
+  /// The platform the material src should adapt to target.
   ///
   /// Defaults to the current platform, as exposed by [defaultTargetPlatform].
   /// This should be used in order to style UI elements according to platform
@@ -165,7 +165,7 @@ class PlatformTheme {
   ///
   /// Currently no components have been migrated to support Material 3.
   /// As they are updated to include Material 3 support this documentation
-  /// will be modified to indicate exactly what widgets this flag will affect.
+  /// will be modified to indicate exactly what src this flag will affect.
   ///
   /// During the migration to Material 3, turning this on may yield
   /// inconsistent look and feel in your app. Some components will be migrated
@@ -261,11 +261,11 @@ class PlatformTheme {
   /// The color used to highlight selected rows.
   final Color? selectedRowColor;
 
-  /// The color used for widgets in their inactive (but enabled)
+  /// The color used for src in their inactive (but enabled)
   /// state. For example, an unchecked checkbox. See also [disabledColor].
   final Color? unselectedWidgetColor;
 
-  /// The color used for widgets that are inoperative, regardless of
+  /// The color used for src that are inoperative, regardless of
   /// their state. For example, a disabled checkbox (which may be
   /// checked or unchecked).
   final Color? disabledColor;
@@ -293,7 +293,7 @@ class PlatformTheme {
   /// The color to use for input validation errors, e.g. in [TextField] fields.
   final Color? errorColor;
 
-  /// The color used to highlight the active states of toggleable widgets like
+  /// The color used to highlight the active states of toggleable src like
   /// [Switch], [Radio], and [Checkbox].
   final Color? toggleableActiveColor;
 
@@ -329,16 +329,16 @@ class PlatformTheme {
   final BottomAppBarTheme? bottomAppBarTheme;
 
   /// A theme for customizing the appearance and layout of [BottomNavigationBar]
-  /// widgets.
+  /// src.
   final BottomNavigationBarThemeData? bottomNavigationBarTheme;
 
   /// A theme for customizing the color, elevation, and shape of a bottom sheet.
   final BottomSheetThemeData? bottomSheetTheme;
 
-  /// A theme for customizing the appearance and layout of [ButtonBar] widgets.
+  /// A theme for customizing the appearance and layout of [ButtonBar] src.
   final ButtonBarThemeData? buttonBarTheme;
 
-  /// Defines the default configuration of button widgets, like [ElevatedButton]
+  /// Defines the default configuration of button src, like [ElevatedButton]
   /// and [TextButton].
   final ButtonThemeData? buttonTheme;
 
@@ -347,7 +347,7 @@ class PlatformTheme {
   /// This is the value returned from [CardTheme.of].
   final CardTheme? cardTheme;
 
-  /// A theme for customizing the appearance and layout of [Checkbox] widgets.
+  /// A theme for customizing the appearance and layout of [Checkbox] src.
   final CheckboxThemeData? checkboxTheme;
 
   /// The colors and styles used to render [Chip]s.
@@ -356,7 +356,7 @@ class PlatformTheme {
   final ChipThemeData? chipTheme;
 
   /// A theme for customizing the appearance and layout of [DataTable]
-  /// widgets.
+  /// src.
   final DataTableThemeData? dataTableTheme;
 
   /// A theme for customizing the shape of a dialog.
@@ -366,7 +366,7 @@ class PlatformTheme {
   /// [VerticalDivider]s, etc.
   final DividerThemeData? dividerTheme;
 
-  /// A theme for customizing the appearance and layout of [Drawer] widgets.
+  /// A theme for customizing the appearance and layout of [Drawer] src.
   final DrawerThemeData? drawerTheme;
 
   /// A theme for customizing the appearance and internal layout of
@@ -377,7 +377,7 @@ class PlatformTheme {
   /// [FloatingActionButton].
   final FloatingActionButtonThemeData? floatingActionButtonTheme;
 
-  /// A theme for customizing the appearance of [ListTile] widgets.
+  /// A theme for customizing the appearance of [ListTile] src.
   final ListTileThemeData? listTileTheme;
 
   /// A theme for customizing the background color, text style, and icon themes
@@ -396,10 +396,10 @@ class PlatformTheme {
   /// popup menus.
   final PopupMenuThemeData? popupMenuTheme;
 
-  /// A theme for customizing the appearance and layout of [ProgressIndicator] widgets.
+  /// A theme for customizing the appearance and layout of [ProgressIndicator] src.
   final ProgressIndicatorThemeData? progressIndicatorTheme;
 
-  /// A theme for customizing the appearance and layout of [Radio] widgets.
+  /// A theme for customizing the appearance and layout of [Radio] src.
   final RadioThemeData? radioTheme;
 
   /// The colors and shapes used to render [Slider].
@@ -410,7 +410,7 @@ class PlatformTheme {
   /// A theme for customizing colors, shape, elevation, and behavior of a [SnackBar].
   final SnackBarThemeData? snackBarTheme;
 
-  /// A theme for customizing the appearance and layout of [Switch] widgets.
+  /// A theme for customizing the appearance and layout of [Switch] src.
   final SwitchThemeData? switchTheme;
 
   /// A theme for customizing the size, shape, and color of the tab bar indicator.
@@ -420,13 +420,13 @@ class PlatformTheme {
   /// [TextButton]s.
   final TextButtonThemeData? textButtonTheme;
 
-  /// A theme for customizing the appearance and layout of [TextField] widgets.
+  /// A theme for customizing the appearance and layout of [TextField] src.
   final TextSelectionThemeData? textSelectionTheme;
 
-  /// A theme for customizing the appearance and layout of time picker widgets.
+  /// A theme for customizing the appearance and layout of time picker src.
   final TimePickerThemeData? timePickerTheme;
 
-  /// Defines the default configuration of [ToggleButtons] widgets.
+  /// Defines the default configuration of [ToggleButtons] src.
   final ToggleButtonsThemeData? toggleButtonsTheme;
 
   /// A theme for customizing the visual properties of [Tooltip]s.
@@ -441,7 +441,7 @@ class PlatformTheme {
   ///
   /// Defaults to null. If a non-null [Brightness] is specified, the value will
   /// take precedence over the ambient [MediaQueryData.platformBrightness], when
-  /// determining the brightness of descendant Cupertino widgets.
+  /// determining the brightness of descendant Cupertino src.
   ///
   /// If coming from a Material [Theme] and unspecified, [brightness] will be
   /// derived from the Material [ThemeData]'s `brightness`.
@@ -452,7 +452,7 @@ class PlatformTheme {
   ///    [brightness] to its Material [Theme] parent if it's unspecified.
   ///
   ///  * [CupertinoTheme.brightnessOf], a method used to retrieve the overall
-  ///    [Brightness] from a [BuildContext], for Cupertino widgets.
+  ///    [Brightness] from a [BuildContext], for Cupertino src.
   final Brightness? brightness;
 */
 /*
@@ -491,7 +491,7 @@ class PlatformTheme {
   ///    [primaryContrastingColor] to its Material [Theme] parent if it's unspecified.
   final Color? primaryContrastingColor;
 
-  /// Text styles used by Cupertino widgets.
+  /// Text styles used by Cupertino src.
   ///
   /// Derived from [primaryColor] if unspecified.
   final CupertinoTextThemeData? cupertinoTextTheme;
