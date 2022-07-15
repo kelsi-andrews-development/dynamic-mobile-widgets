@@ -1,6 +1,6 @@
 name: dynamic_mobile_widgets
 description: Flutter package that automatically chooses the correct widgets for Android and IOS platforms.
-version: 0.0.15
+version: 0.0.15+1
 homepage: https://github.com/kelsi-andrews-development/dynamic-mobile-widgets
 
 environment:
