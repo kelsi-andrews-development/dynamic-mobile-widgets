@@ -1,4 +1,3 @@
-<!-- 
 Flutter package that automatically chooses the correct widgets for Android and IOS platforms.
 The goal of this package is to provide widgets that use one set of parameters to build different 
 widgets since Android and IOS widgets do not maintain consistency between each other. Another goal 
@@ -28,10 +27,10 @@ Import the package and call any widget
 ## Usage
 
 ```dart
-PlatformApp(
+DynamicApp(
     title: "App Title",
     materialThemeData: {themeData},
-    initialRoute: "/home"
+    initialRoute: "/home",
     },
   );
 ```
